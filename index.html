@@ -50,10 +50,13 @@
                                 Memories
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Photos</a></li>
-                                <li><a class="dropdown-item" href="#">Videos</a></li>
-                                <li><a class="dropdown-item" href="#">Folks</a></li>
+                                <li><a class="dropdown-item" href="./pages/photos.html">Photos</a></li>
+                                <li><a class="dropdown-item" href="./pages/videos.html">Videos</a></li>
+                                <li><a class="dropdown-item" href="./pages/folks.html">Folks</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-music-note-beamed"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -193,5 +196,40 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     </script>
 </body>
-
 </html>
+
+<!-- Offcanvas to show songs -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header bg-primary">
+        <h5 class="offcanvas-title text-light" id="offcanvasWithBothOptionsLabel">Explore any songs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="song-list">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./../assets/images/music/gala bunga matahari.jpeg" width="295" height="300" alt="gala bunga matahari">
+                            </div>
+                            <small class="fs-5 audio-text">Sal Priadi - Gala bunga matahari</small>
+                            <audio class="audio-player" src="./../assets/music/Sal Priadi - Gala bunga matahari.mp3" controls></audio>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./../assets/images/music/ab67616d0000b2738869d13091935994879f2a47.jpeg" width="295" height="300" alt="gala bunga matahari">
+                            </div>
+                            <small class="fs-5 audio-text text-light">Bernadya - Apa mungkin</small>
+                            <audio class="audio-player" src="./../assets/music/Bernadya - Apa Mungkin.mp3" controls autoplay></audio>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

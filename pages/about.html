@@ -42,7 +42,7 @@
                             <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" href="./pages/about.html">About</a>
+                            <a class="nav-link active" href="./../pages/about.html">About</a>
                         </li>
                         <li class="nav-item dropdown mx-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -50,10 +50,13 @@
                                 Memories
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Photos</a></li>
-                                <li><a class="dropdown-item" href="#">Videos</a></li>
-                                <li><a class="dropdown-item" href="#">Folks</a></li>
+                                <li><a class="dropdown-item" href="./../pages/photos.html">Photos</a></li>
+                                <li><a class="dropdown-item" href="./../pages/videos.html">Videos</a></li>
+                                <li><a class="dropdown-item" href="./../pages/folks.html">Folks</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-music-note-beamed"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -65,32 +68,32 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 540px; border-bottom: 3px solid #0f53bb;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="./../assets/images/about/marco.jpg" class="img-fluid rounded-start" alt="marco" style="width: 179px; height: 239px">
                           </div>
                           <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Marco Antonio Senni Koten</h5>
-                              <p class="card-text">a.k.a Bubba</p>
-                              <p class="card-text"><small class="text-body-secondary">Bogor, 03 November 2003</small></p>
+                            <div class="card-body text-start mx-3">
+                                <h5 class="card-title mt2 fs-2">Marco Antonio Senni Koten</h5>
+                                <p class="card-text fs-4">a.k.a Bubba</p>
+                                <p class="card-text fs-5"><small class="text-body-secondary">Bogor, 03 November 2003</small></p>
                             </div>
                           </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 540px; border-bottom: 3px solid #0f53bb;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="./../assets/images/about/kezya.jpg" class="img-fluid rounded-start" alt="kezya" style="width: 179px; height: 239px">
                           </div>
                           <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Kezya Ester Dwiana</h5>
-                              <p class="card-text">a.k.a Bee</p>
-                              <p class="card-text"><small class="text-body-secondary">Jakarta, 10 May 2003</small></p>
+                            <div class="card-body text-start mx-3">
+                              <h5 class="card-title mt2 fs-2">Kezya Ester Dwiana</h5>
+                              <p class="card-text fs-4">a.k.a Bee</p>
+                              <p class="card-text fs-5"><small class="text-body-secondary">Jakarta, 10 May 2003</small></p>
                             </div>
                           </div>
                         </div>
@@ -100,7 +103,7 @@
         </div>
     </section>
    
-    <section class="mt-5">
+    <!-- <section class="mt-5">
         <footer class="bg-primary py-3">
             <div class="container">
                 <div class="row">
@@ -111,9 +114,45 @@
                 </div>
             </div>
         </footer>
-    </section>
+    </section> -->
 
     <script src="./../assets/js/bootstrap.bundle.min.js"></script>
     </script>
 </body>
 </html>
+
+<!-- Offcanvas to show songs -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header bg-primary">
+        <h5 class="offcanvas-title text-light" id="offcanvasWithBothOptionsLabel">Explore any songs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="song-list">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./../assets/images/music/gala bunga matahari.jpeg" width="295" height="300" alt="gala bunga matahari">
+                            </div>
+                            <small class="fs-5 audio-text">Sal Priadi - Gala bunga matahari</small>
+                            <audio class="audio-player" src="./../assets/music/Sal Priadi - Gala bunga matahari.mp3" controls></audio>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./../assets/images/music/ab67616d0000b2738869d13091935994879f2a47.jpeg" width="295" height="300" alt="gala bunga matahari">
+                            </div>
+                            <small class="fs-5 audio-text text-light">Bernadya - Apa mungkin</small>
+                            <audio class="audio-player" src="./../assets/music/Bernadya - Apa Mungkin.mp3" controls autoplay></audio>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
