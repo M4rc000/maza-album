@@ -13,7 +13,7 @@
 <style>
     @font-face {
         font-family: 'Delicious Handrawn';
-        src: url('./assets/fonts/DeliciousHandrawn-Regular.ttf') format('truetype');
+        src: url('./../assets/fonts/DeliciousHandrawn-Regular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
     }
@@ -24,6 +24,35 @@
 
     body{
         background-image: url('./assets/images/background/leaves.webp');
+    }
+
+    .cover-song {
+        position: relative; /* Sets the container for absolute positioning */
+        display: inline-block; /* Ensures content doesn't stretch */
+    }
+
+    .cover-song img {
+        display: block; /* Ensures the image behaves as a block element */
+        position: relative; /* Keeps the image in the flow */
+        z-index: 1; /* Places the image below the audio */
+        border-radius: 10px 10px 0 0;
+    }
+
+    .cover-song .audio-player {
+        position: absolute; /* Enables positioning relative to .cover-song */
+        top: 97%; /* Adjusts the vertical placement */
+        left: 50%; /* Centers the audio horizontally */
+        transform: translate(-50%, -50%); /* Centers the audio perfectly */
+        z-index: 2; /* Ensures the audio tag is above the image */
+    }
+
+    .cover-song .audio-text {
+        position: absolute;
+        top: 23%;
+        margin: auto;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
     }
 </style>
 
@@ -211,10 +240,10 @@
                     <div class="col-md text-center">
                         <div class="cover-song">
                             <div class="col">
-                                <img class="mt-5 " src="./../assets/images/music/gala bunga matahari.jpeg" width="295" height="300" alt="gala bunga matahari">
+                                <img class="mt-5 " src="./assets/images/music/gala bunga matahari.jpeg" width="295" height="300" alt="gala bunga matahari">
                             </div>
                             <small class="fs-5 audio-text">Sal Priadi - Gala bunga matahari</small>
-                            <audio class="audio-player" src="./../assets/music/Sal Priadi - Gala bunga matahari.mp3" controls></audio>
+                            <audio class="audio-player" src="./assets/music/Sal Priadi - Gala bunga matahari.mp3" controls></audio>
                         </div>                            
                     </div>
                 </div>
@@ -222,10 +251,54 @@
                     <div class="col-md text-center">
                         <div class="cover-song">
                             <div class="col">
-                                <img class="mt-5 " src="./../assets/images/music/ab67616d0000b2738869d13091935994879f2a47.jpeg" width="295" height="300" alt="gala bunga matahari">
+                                <img class="mt-5 " src="./assets/images/music/ab67616d0000b2738869d13091935994879f2a47.jpeg" width="295" height="300" alt="apa mungkin">
                             </div>
                             <small class="fs-5 audio-text text-light">Bernadya - Apa mungkin</small>
-                            <audio class="audio-player" src="./../assets/music/Bernadya - Apa Mungkin.mp3" controls autoplay></audio>
+                            <audio class="audio-player" src="./assets/music/Bernadya - Apa Mungkin.mp3" controls></audio>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./assets/images/music/tulus.jpeg" width="295" height="300" alt="interaksi">
+                            </div>
+                            <small class="fs-5 audio-text text-dark">Tulus - Interaksi</small>
+                            <audio class="audio-player" src="./assets/music/TULUS - Interaksi.mp3" controls></audio>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./assets/images/music/tulus.jpeg" width="295" height="300" alt="sepatu">
+                            </div>
+                            <small class="fs-5 audio-text text-dark">Tulus - Sepatu</small>
+                            <audio class="audio-player" src="./assets/music/TULUS - Sepatu.mp3" controls></audio>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./assets/images/music/tulus.jpeg" width="295" height="300" alt="sewindu">
+                            </div>
+                            <small class="fs-5 audio-text text-dark">Tulus - Sewindu</small>
+                            <audio class="audio-player" src="./assets/music/Tulus - Sewindu.mp3" controls></audio>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md text-center">
+                        <div class="cover-song">
+                            <div class="col">
+                                <img class="mt-5 " src="./assets/images/music/tulus.jpeg" width="295" height="300" alt="hati hati dijalan">
+                            </div>
+                            <small class="fs-5 audio-text text-dark">Tulus - Hati-hati di jalan</small>
+                            <audio class="audio-player" src="./assets/music/TULUS - Hati-Hati di Jalan.mp3" controls></audio>
                         </div>                            
                     </div>
                 </div>
@@ -233,3 +306,5 @@
         </div>
     </div>
 </div>
+
+<script src="./assets/js/index.js"></script>
